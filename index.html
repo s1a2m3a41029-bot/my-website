@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety Chat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" alt="Digital Identity Logo" class="logo">
+        <h1>Safety Chat</h1>
+        <p>We are here for you when you feel unsafe or face bullying.</p>
+    </header>
+
+    <!-- Category buttons -->
+    <div class="categories">
+        <button class="category-btn" onclick="switchCategory('happiness')">Feeling Sad</button>
+        <button class="category-btn" onclick="switchCategory('bullying')">Facing Bullying</button>
+        <button class="category-btn" onclick="switchCategory('problem-solving')">Problem Solving</button>
+    </div>
+
+    <!-- Chat container -->
+    <div class="chat-container">
+        <div id="chat-box" class="chat-box">
+            <!-- Messages appear here -->
+        </div>
+
+        <div class="input-area">
+            <textarea id="user-input" placeholder="Type your message here..."></textarea>
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Designed for safety and comfort.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
